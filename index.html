@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Trabalho DSW </title>
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+	</head>
+	
+	<body>
+		<h1>Sistema de Cadastro</h1>
+		
+		<label>Cadastrar Produto </label>
+		
+		<div id="divForm">
+			<form name="form" method="POST" action="salvar.php" onsubmit="return validar()" enctype="multipart/form-data">
+				<label for="txtNome">Nome: </label>
+				<input type="text" name="txtNome" id="txtNome" required maxlength="50" /> <br><br>
+				
+				 <label for="txtPreco">Preço:</label>
+				<input type="number" name="txtPreco" step="any" min="0" max="700"/> <br><br>
+				
+				<label for="txtQuantidade">Quantidade:</label>
+				<input type="number" name="txtQuantidade" /> <br><br>
+			
+				<label for="txtValidade">Data de Validade:</label>
+				<input type="date" name="txtValidade" min="1900-01-01" max="2050-12-29" value="2020-04-16" /> <br><br>
+				
+				<label for="foto">Foto: </label>
+				<input type="file" name="foto" /> <br><br>
+				
+				<label for="categoria">Categoria: </label>
+				
+				<select name="categoria">
+                <option value="0">Selecione...</option>
+                <optgroup label="BEBIDAS NÃO ALCOÓLICAS">
+                    <option value="3" >Refrigerante</option>
+                    <option value="10">Suco</option>
+                    <option value="1">Água</option>
+                </optgroup>
+                <optgroup label="BEBIDAS ALCOÓLICAS">
+                    <option value="2">Cerveja</option>
+                    <option value="7">Vodca</option>
+                    <option value="100">Whisky</option>
+                </optgroup> 
+				</select> <br><br>
+				
+				<input type="submit" value="Salvar" /> 
+				<input type="reset" value="Limpar" />
+			</form>
+		</div>
+		<script src="scripts.js"></script>
+	
+	</body>
+</html>
