@@ -1,14 +1,3 @@
-/*function validar(){
-	var txt = document.getElementByName("txtNome");
-	var nome = txt.value;
-	if(nome.length < 2){
-		alert("Preencha o campo NOME! ");
-		return false;
-	}else{
-		return true;
-	}
-}*/
-
 function validar(){
   
 if(document.form.txtNome.value == "" ){
@@ -20,7 +9,7 @@ if(document.form.txtNome.value == "" ){
 	}
 }
 
-if(document.form.txtPreco.value == "" || document.form.txtPreco.value.length < 0 ){
+if(document.form.txtPreco.value == "" || document.form.txtPreco.value.length < ){
 	alert( "Preencha campo PREÇO corretamente!" );
 	document.form.txtPreco.focus();
 	return false;
@@ -38,7 +27,7 @@ if(document.form.txtQuantidade.value == ""){
 	}
 }
 
-if(document.form.txtValidade.value == "" || ){
+if(document.form.txtValidade.value == "" ){
 	alert( "Preencha campo VALIDADE corretamente!" );
 	document.form.txtValidade.focus();
 	return false;
@@ -64,6 +53,6 @@ if(document.form.categoria.value == "" || document.form.categoria.options[catego
 	}else {
 	return true;
 	}
-	}
+}
 
 }
